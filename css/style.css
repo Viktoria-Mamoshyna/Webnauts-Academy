@@ -1,0 +1,257 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroy-regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroy-medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroy-semibold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroy-bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body {
+    font-family: "Gilroy";
+    font-weight: 400;
+    width: 1600px;
+    height: 1989px;
+    margin: 0 auto;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+address {
+    font-style: inherit;
+}
+:any-link {
+    color: inherit;
+}
+
+/* header */
+.header {
+}
+.header__wripper {
+    display: flex;
+    justify-content: space-between;
+}
+.info {
+    padding: 10px 50px;
+    background: #20242d;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ffffff;
+}
+.address {
+}
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+.contacts__item:first-child {
+    padding-left: 40px;
+    background: url("../img/mail.svg") no-repeat;
+    background-position: 10px 0;
+}
+.contacts__item:last-child {
+    padding-left: 20px;
+    background: url("../img/phone.svg") left no-repeat;
+}
+.email {
+    margin-right: 77px;
+}
+.phone {
+}
+.logo {
+    margin: 12px 0 11px 50px;
+}
+.logo__img {
+}
+.menu {
+    width: 543px;
+    margin: 20px 50px 20px 0;
+}
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #20242d;
+}
+.menu__item {
+}
+.menu__item_active {
+    position: relative;
+    color: #ff7129;
+}
+.header .menu__item_active::after {
+    content: "";
+    width: 10px;
+    height: 1px;
+    background: #ff7129;
+    display: inline-block;
+    position: absolute;
+    margin: 8px 0 0 8px;
+}
+.header .menu__item_active::before {
+    content: "";
+    width: 10px;
+    height: 1px;
+    background: #ff7129;
+    display: inline-block;
+    position: absolute;
+    margin: 8px 0 0 -16px;
+}
+
+/* main */
+.main {
+}
+.main__wripper-head {
+    background: url("../img/index/sunpanel.jpg"), url("../img/index/click.png") no-repeat;
+    display: block;
+    position: relative;
+    width: 1600px;
+    height: 844px;
+}
+.main__wripper-head::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: radial-gradient(50% 179.69% at 50% 50%, rgba(32, 36, 45, 0) 0%, #20242d 100%), rgba(32, 36, 45, 0.3);
+    mix-blend-mode: multiply;
+    opacity: 0.9;
+}
+
+.headline {
+    font-weight: 700;
+    font-size: 92px;
+    line-height: 111px;
+    text-align: center;
+    color: #ffffff;
+}
+.content {
+}
+.content p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.btn-calculator {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #ffffff;
+    width: 187px;
+    height: 49px;
+    left: 0px;
+    top: 0px;
+    background: #ff7129;
+    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+}
+
+.main__wripper {
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+.content__img {
+}
+.content__text {
+}
+.content__text h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 47px;
+    color: #20242d;
+}
+.content__text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #20242d;
+    text-align: left;
+}
+
+/* footer */
+
+.footer {
+    background: #20242d;
+    width: 1600px;
+    height: 207px;
+}
+.footer__wripper {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+}
+.logo__img {
+}
+.menu {
+}
+.footer .menu__list {
+    color: #ffffff;
+}
+.menu__item {
+}
+.menu__item_active {
+}
+.btn-call {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #ffffff;
+    width: 187px;
+    height: 49px;
+    left: 0px;
+    top: 0px;
+    border: 1px solid #ff7129;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 28px rgba(255, 113, 41, 0.67));
+    opacity: 0.5;
+}
+.copyright {
+    display: flex;
+    justify-content: space-between;
+}
+.copyright__item {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #7b7e85;
+}
